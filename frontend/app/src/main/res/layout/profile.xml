@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Ảnh tài khoản -->
+        <ImageView
+            android:id="@+id/account_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/img_1"
+            android:contentDescription="Account Image" />
+
+        <!-- Tên tài khoản -->
+        <TextView
+            android:id="@+id/account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="imnddat"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Giao diện tối/sáng -->
+        <Button
+            android:id="@+id/btn_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giao diện tối/sáng"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Hình nền -->
+        <Button
+            android:id="@+id/btn_wallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hình nền"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Ngôn ngữ -->
+        <Button
+            android:id="@+id/btn_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ngôn ngữ"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Danh mục màn hình chủ -->
+        <Button
+            android:id="@+id/btn_home_screen_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danh mục màn hình chủ"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Chia sẻ bạn bè -->
+        <Button
+            android:id="@+id/btn_share_with_friends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chia sẻ bạn bè"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Yêu cầu sách -->
+        <Button
+            android:id="@+id/btn_request_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yêu cầu sách"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Báo lỗi -->
+        <Button
+            android:id="@+id/btn_report_issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Báo lỗi"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Góp ý -->
+        <Button
+            android:id="@+id/btn_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Góp ý"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Đánh giá 5 sao -->
+        <Button
+            android:id="@+id/btn_rate_5_stars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đánh giá 5 sao"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>

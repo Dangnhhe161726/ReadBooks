@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+    <!-- Ảnh sách -->
+    <ImageView
+        android:id="@+id/book_image"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Book Image"
+        android:src="@drawable/img" />
+
+    <!-- Tên sách -->
+    <TextView
+        android:id="@+id/book_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/book_image"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="Dẫn luận về trí thông minh"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Tên tác giả -->
+    <TextView
+        android:id="@+id/book_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_title"
+        android:layout_toEndOf="@id/book_image"
+        android:layout_alignParentEnd="true"
+        android:text="Ian J. Deary"
+        android:textSize="16sp" />
+
+    <!-- Icon lượt tim -->
+    <LinearLayout
+        android:id="@+id/likes_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_author"
+        android:layout_toEndOf="@id/book_image"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_emoji_emotions_24"
+            android:contentDescription="Likes Icon" />
+
+        <TextView
+            android:id="@+id/likes_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="123"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Icon số lượt xem -->
+    <LinearLayout
+        android:id="@+id/views_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/likes_layout"
+        android:layout_toEndOf="@id/book_image"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_heart_broken_24"
+            android:contentDescription="Views Icon" />
+
+        <TextView
+            android:id="@+id/views_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="456"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Button hiển thị đọc -->
+    <Button
+        android:id="@+id/read_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/book_image"
+        android:layout_marginTop="16dp"
+        android:text="Đọc" />
+
+    <!-- Tab bar (giới thiệu sách, bình luận) -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/read_button"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_introduction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giới thiệu sách" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bình luận" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- Đoạn text giới thiệu về sách -->
+    <TextView
+        android:id="@+id/book_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab_layout"
+        android:layout_marginTop="16dp"
+        android:text="Cuốn sách được viết bởi một trong những nhân vật hàng đầu thế giới về lĩnh vực trí thông minh, cung cấp một câu dẫn luận lý tưởng vào một chủ đề gây tranh cãi. Bằng lối viết lôi cuốn và rõ ràng, Ian Deary nói với chúng ta những điều đã được thực hiện, những gì đã được tìm ra, chúng có nghĩa là gì và không có nghĩa là gì… Nếu bạn muốn biết con người biết gì về trí thông minh và biết như thế nào, hãy đọc cuốn sách này. (Nat Brody, Wesleyan University)."
+        android:textSize="14sp" />
+
+</RelativeLayout>
