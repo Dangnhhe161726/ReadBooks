@@ -1,5 +1,6 @@
 package com.example.frontend;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -14,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.profile);
-
+        setContentView(R.layout.activity_main);
+        Intent it = new Intent(this, NotificationsActivity.class);
+        startActivity(it);
     }
 }
